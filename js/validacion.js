@@ -30,21 +30,13 @@ function passwordIguales(){
 
 function aceptaTerminos(){
     return document.getElementById('terminos').checked
-}
+}   
 
 
 function submit(){
-    console.log(estanCamposVacio(), 'campos')
-    console.log(largoDePass(), 'largo')
-    console.log(passwordIguales(), 'iguales')
-    console.log(aceptaTerminos(), 'terminos')
-
-
-
-    if( estanCamposVacio() && largoDePass() && passwordIguales() && aceptaTerminos())
+    if( estanCamposVacio() && largoDePass() && passwordIguales() && aceptaTerminos()) {
         showAlertSuccess()
-    else
-        showAlertError()
+    } else showAlertError()
 }
 /*
 Ningún campo puede estar vacío.
