@@ -5,6 +5,13 @@ function showAlertError() {
     document.getElementById("alert-danger").classList.add("show");
 }
 
+function hideAlertSuccess() {
+    document.getElementById("alert-success").classList.add("hide");
+}
+function hideAlertError() {
+    document.getElementById("alert-danger").classList.add("hide");
+}
+
 // Funciones Auxiliares
 
 function estanCamposVacio(){
