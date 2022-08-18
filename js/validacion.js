@@ -12,7 +12,6 @@ function estanCamposVacio(){
     let noEstaVacio =true;
     let i = 0;
     while(noEstaVacio && i<arr.length){
-        console.log(document.getElementById(arr[i]).value, arr[i])
        noEstaVacio = noEstaVacio && document.getElementById(arr[i]).value !== '';
        i++;
     }
